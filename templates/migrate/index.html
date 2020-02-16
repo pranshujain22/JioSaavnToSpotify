@@ -151,7 +151,7 @@
                                                         <label class="control-label">Playlist Link
                                                             <small>(required)</small>
                                                         </label>
-                                                        <input id="playlistLink" type="url" class="form-control"  autofocus>
+                                                        <input id="playlistLink" type="url" class="form-control" required autofocus>
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,9 +163,6 @@
                                             And paste the link after authorization below.
                                         </h4>
                                         <div class="info-text">
-{#                                                <span class="input-group-addon">#}
-{#                                                    <i class="material-icons">link</i>#}
-{#                                                </span>#}
                                             <div class="form-group label-floating">
                                                 <input type="button" class="btn btn-fill btn-warning btn-wd" value="Authorize" onclick="loginSpotify()">
                                             </div>
@@ -178,7 +175,7 @@
                                                 <div class="form-group label-floating">
                                                     <label class="control-label">Paste the link here...
                                                     </label>
-                                                    <input id="tokenLink" type="text" class="form-control" >
+                                                    <input id="tokenLink" type="text" class="form-control" required>
                                                 </div>
                                             </div>
                                         </div>
