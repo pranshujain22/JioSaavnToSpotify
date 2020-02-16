@@ -6,7 +6,7 @@ import json
 
 
 SPOTIPY_CLIENT_ID = "85afea4742854bdd8d958433a89f229c"
-SPOTIPY_REDIRECT_URI = "https://github.com/pranshujain22/"
+SPOTIPY_REDIRECT_URI = "https://jiosaavn-to-spotify.herokuapp.com/spotifyAuth"
 SPOTIPY_SCOPE = "playlist-read-private"
 SPOTIFY_AUTH_END_POINT = "https://accounts.spotify.com/authorize?" + \
                          "client_id=" + SPOTIPY_CLIENT_ID + \
