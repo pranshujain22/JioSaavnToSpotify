@@ -4,14 +4,32 @@
 {% block head %}
     <title>Spotify Auth</title>
 
+    <style>
+        a:hover {
+            cursor: pointer;
+        }
+    </style>
 {% endblock %}
 
 {% block body %}
     <!--   Big container   -->
     <div class="container">
         <div class="row">
-            <h3 class="text-darker"><strong>
-                Copy the link from here and paste it in the main window.</strong></h3>
+            <h3 class="text-darker" id="text"><strong>
+                Click <a onclick="f()">here</a> to copy the link and paste it in the main window.</strong></h3>
         </div><!-- end row -->
     </div> <!--  big container -->
+
+    <script>
+    function f() {
+        var copyText = document.createElement('textarea');
+        copyText.value = window.location.href;
+        document.body.appendChild(copyText);
+        copyText.select();
+        document.execCommand('copy');
+        document.body.removeChild(copyText);
+        window.close();
+    }
+
+    </script>
 {% endblock %}

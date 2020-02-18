@@ -1,3 +1,4 @@
+from traceback import print_exc
 from migrate import saavn
 import spotipy
 import json
@@ -71,6 +72,7 @@ def import_to_spotify(username, playlist_name, song_names_inside_playlist, token
             spotify.user_playlist_add_tracks(str(username), current_playlist_id, song_ids_acc_to_spotify[:100], None)
             song_ids_acc_to_spotify = song_ids_acc_to_spotify[100:]
     except:
+        print_exc()
         return False
 
     return True

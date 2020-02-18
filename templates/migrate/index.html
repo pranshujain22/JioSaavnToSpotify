@@ -305,10 +305,16 @@
                         },
                         success: function (data) {
                             console.log(data);
-                            document.getElementById('loader').style.display = 'none';
-                            document.getElementById('importbtn').style.display = 'inline-block';
-                            document.getElementById('lastStep').style.display = 'none';
-                            document.getElementById('success-message').style.display = 'block';
+                            if (data['message'] == 'success') {
+                                document.getElementById('loader').style.display = 'none';
+                                document.getElementById('importbtn').style.display = 'inline-block';
+                                document.getElementById('lastStep').style.display = 'none';
+                                document.getElementById('success-message').style.display = 'block';
+                            }else {
+                                document.getElementById('loader').style.display = 'none';
+                                document.getElementById('importbtn').style.display = 'inline-block';
+                                document.getElementById('error-message').style.display = 'block';
+                            }
                         },
                         error: function (data) {
                             console.log(data);
