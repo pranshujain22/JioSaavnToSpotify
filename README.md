@@ -1,2 +1,2 @@
 # JioSaavnToSpotify
-Imports playlist from JioSaavn to Spotify.
+Click [here](https://jiosaavn-to-spotify.herokuapp.com) to import JioSaavn playlist to Spotify.
