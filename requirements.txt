@@ -10,5 +10,5 @@ pytz==2018.9
 requests==2.22.0
 responses==0.10.6
 spotipy==2.7.1
-urllib3==1.25.8
+urllib3==1.26.5
 whitenoise==5.0.1
